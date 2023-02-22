@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style/home.css" />
+    <link rel="stylesheet" href="../style/reserva.css" />
+    <title>RESERVA</title>
+</head>
+
+<body class="bg-black">
+    <div class="containerMenu">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand text-white" href="./home.html"><img class="logo" src="../img/logo3.png" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav p-4">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white p-4" href="../page/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white p-4" href="../page/cartelera.html">Cartelera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white p-4" href="#">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white p-4" href="./comidas.html">Comidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white p-4" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="boton" type="submit" id="btnLogOut">LogOut</button>
+        </nav>
+    </div>
+    <!--INICIO RESERVA -->
+
+    <div class="container-fluid vh-100 d-flex justify-content-center aling-items-center">
+        <div class="shadow p-5 d-flex w75 justify-content-evenly">
+            <div class="shadow p-5 cinema-room">
+                <div class="d-flex justify-content-evenly my-2">
+                    <div class="mx-2 p-2">A</div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A1')">
+                        1
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A2')">
+                        2
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A3')">
+                        3
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A4')">
+                        4
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A5')">
+                        5
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A6')">
+                        6
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A7')">
+                        7
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A8')">
+                        8
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A9')">
+                        9
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A10')">
+                        10
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('A11')">
+                        11
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly my-2">
+                    <div class="mx-2 p-2">B</div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B1')">
+                        1
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B2')">
+                        2
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B3')">
+                        3
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B4')">
+                        4
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B5')">
+                        5
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B6')">
+                        6
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B7')">
+                        7
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B8')">
+                        8
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B9')">
+                        9
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B10')">
+                        10
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('B11')">
+                        11
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly my-2">
+                    <div class="mx-2 p-2">C</div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C1')">
+                        1
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C2')">
+                        2
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C3')">
+                        3
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C4')">
+                        4
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C5')">
+                        5
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C6')">
+                        6
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C7')">
+                        7
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C8')">
+                        8
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C9')">
+                        9
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C10')">
+                        10
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('C11')">
+                        11
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly my-2">
+                    <div class="mx-2 p-2">D</div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D1')">
+                        1
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D2')">
+                        2
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D3')">
+                        3
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D4')">
+                        4
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D5')">
+                        5
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D6')">
+                        6
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D7')">
+                        7
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D8')">
+                        8
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D9')">
+                        9
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D10')">
+                        10
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('D11')">
+                        11
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly my-2">
+                    <div class="mx-2 p-2">E</div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E1')">
+                        1
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E2')">
+                        2
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E3')">
+                        3
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E4')">
+                        4
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E5')">
+                        5
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E6')">
+                        6
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E7')">
+                        7
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E8')">
+                        8
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E9')">
+                        9
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E10')">
+                        10
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('E11')">
+                        11
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly my-2">
+                    <div class="mx-2 p-2">F</div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F1')">
+                        1
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F2')">
+                        2
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F3')">
+                        3
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F4')">
+                        4
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F5')">
+                        5
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F6')">
+                        6
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F7')">
+                        7
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F8')">
+                        8
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F9')">
+                        9
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F10')">
+                        10
+                    </div>
+                    <div class="mx-2 border border-warning p-2" onclick="selectSeat('F11')">
+                        11
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="shadow p-5">
+                <h6>
+                    <form id="form-title"></form>
+                </h6>
+                <form>
+                    <div class="my-2">
+                        <label for="name">Ingrese su nombre</label>
+                        <input type="text" id="name" class="input" />
+                    </div>
+                    <div class="my-2">
+                        <label for="cc">Ingrese su identificaciòn</label>
+                        <input type="text" id="cc" class="input" />
+                    </div>
+                    <div class="text-center">
+                        <button type ="button" class="btn " onclick="createReservation()">Reservar</button>
+                    </div>
+                </form>
+<table class="table my-5">
+    <thead >
+<th>Name</th>
+<th>Identificacion</th>
+<th>Seat</th>
+<th>Action</th>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FIN RERESERVA -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Images -->
+            <section class="imgfooter">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="../img/2.2.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="../img/3.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="../img/4.2.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="../img/5.1.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="../img/7.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="../img/8.1.jpg" class="w-100" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Images -->
+            <br />
+            <br />
+
+            <!-- Section: Form -->
+
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <small class="tyc">TERMINOS Y CONDICIONES: EL CLIENTE ACEPTA QUE EL USO DE LA
+                    MEMBRESÍA GOLD (PLAN DE FIDELIZACIÓN DE CINEMA COLOMBIA S.A.S.) ESTÁ
+                    SUJETA A LOS SIGUIENTES TÉRMINOS Y CONDICIONES DE USO LOS CUALES SE
+                    PIDE A LOS USUARIOS Y POTENCIALES USUARIOS LEER CON ATENCIÓN.
+                </small>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="p-4">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <div>
+                            <img class="logo-redes" src="../img/logo.facebook.png" alt="" />
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <div>
+                            <img class="logo-redes" src="../img/logo.instagram.png" alt="" />
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/" target="_blank">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- scripts -->
+    <script src="../js/reserva.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
